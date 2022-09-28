@@ -21,4 +21,20 @@ Console.WriteLine(c/d);
 
 double i = 12;
 double f = 5;
-Console.WriteLine(i/f);
+double div=i/f;
+Console.WriteLine("Деление: "+ div);
+
+/* % - нахождение остатка от деления
+Умножение и деление выполняются в 1ю очередь. Потом сложение и вычитание.
+
+new Random().Next(min,max) - генератор случайных чисел. Даст случайное целое число от min до max-1
+*/
+
+//Пример 5: Генерация случайных чисел 
+Console.WriteLine("Сложим два случайных числа:");
+int j = new Random().Next(1, 10); //1 2 3 4 ... 9
+Console.WriteLine(j);
+int h = new Random().Next(1, 10);
+Console.WriteLine(h);
+int sum=j+h;
+Console.WriteLine("Сумма: "+ sum);
