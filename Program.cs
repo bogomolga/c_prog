@@ -30,7 +30,7 @@ Console.WriteLine("Деление: "+ div);
 new Random().Next(min,max) - генератор случайных чисел. Даст случайное целое число от min до max-1
 */
 
-//Пример 5: Генерация случайных чисел 
+//Пример 4.2: Генерация случайных чисел 
 Console.WriteLine("Сложим два случайных числа:");
 int j = new Random().Next(1, 10); //1 2 3 4 ... 9
 Console.WriteLine(j);
