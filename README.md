@@ -1,2 +1,6 @@
 # c_prog
-c#
+c# программирование
+
+Урок 1
+
+"Example01_HelloConsole"
