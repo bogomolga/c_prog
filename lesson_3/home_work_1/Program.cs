@@ -8,9 +8,9 @@ int n = PrintAndGetValue("Задача 19. Введите пятизначное
 if (n>0)
 {
     string myString = n.ToString(); //преобразуем в строку
-    Console.WriteLine("myString = "+myString);
+        //Console.WriteLine("myString = "+myString);
     int length = myString.Length;
-    Console.WriteLine("length = "+length);
+        //Console.WriteLine("length = "+length);
 
     if (length!=5)
     {
@@ -65,6 +65,12 @@ arrayB[2] = PrintAndGetValue("Введите координату B3: ");
 
 Console.WriteLine("Расстояние от точки А до точки В: "+ GetDistance3D(arrayA[0],arrayA[1],arrayA[2],arrayB[0],arrayB[1],arrayB[2]));
 
+double GetDistance3D (int x1, int y1, int z1, int x2, int y2, int z2)
+{
+    double res = Math.Sqrt(Math.Pow(x1-x2,2)+Math.Pow(y1-y2,2)+Math.Pow(z1-z2,2));
+    return res;
+}
+
 
 //Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 //3 -> 1, 8, 27
@@ -94,6 +100,8 @@ else
      Console.WriteLine("Надо вводить положительное число");
 }
 
+
+
 //---------------------------------------------------------------------------------------
 int PrintAndGetValue(string message) //функция для ввода и считывания значения из консоли
 {
@@ -102,8 +110,4 @@ int PrintAndGetValue(string message) //функция для ввода и сч�
     return value;
 }
 
-double GetDistance3D (int x1, int y1, int z1, int x2, int y2, int z2)
-{
-    double res = Math.Sqrt(Math.Pow(x1-x2,2)+Math.Pow(y1-y2,2)+Math.Pow(z1-z2,2));
-    return res;
-}
+
