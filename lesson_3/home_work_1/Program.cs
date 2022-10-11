@@ -36,16 +36,16 @@ else
 
 bool IsPalindrome (string value)
 {
-    bool p;
+    //bool p;
     if (value[0]==value[4] && value[1]==value[3]) 
     {
-        p = true;
+        return true;
     }
     else
     {
-        p = false;
+        return false;
     }
-    return p;
+    //return p;
 }
 
 
@@ -56,7 +56,7 @@ bool IsPalindrome (string value)
 int[] arrayA = new int[3];
 int[] arrayB = new int[3];
 
-arrayA[0] = PrintAndGetValue("Задача 19. Введите координату A1: ");
+arrayA[0] = PrintAndGetValue("Задача 21. Введите координату A1: ");
 arrayA[1] = PrintAndGetValue("Введите координату A2: ");
 arrayA[2] = PrintAndGetValue("Введите координату A3: ");
 arrayB[0] = PrintAndGetValue("Введите координату B1: ");
@@ -76,7 +76,7 @@ double GetDistance3D (int x1, int y1, int z1, int x2, int y2, int z2)
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
 
-int N = PrintAndGetValue("Введите N: ");
+int N = PrintAndGetValue("Задача 23. Введите N: ");
 //n=Math.Abs(n); //берем модуль
 string s1="";
 
