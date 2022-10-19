@@ -46,8 +46,6 @@ double CalculateStepen(double value, int stepen) //Возводит value в с�
     while (count<stepen) 
     {
         s=s*value;
-        Console.WriteLine("s= "+s);
-        Console.WriteLine("count= "+count);
         count++;
     }
     return s;
