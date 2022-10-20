@@ -8,8 +8,7 @@ int min = PrintAndGetValue("Введите min ограничение для з�
 int max = PrintAndGetValue("Введите max ограничение для значений элементов массива: ");
 int[] inputArray = GetRandomArray(n,min,max);
 
-bool isValid = isPositiveNumber(n);
-if(isValid)
+if(isPositiveNumber(n))
 {
     PrintArray(inputArray);
 }
