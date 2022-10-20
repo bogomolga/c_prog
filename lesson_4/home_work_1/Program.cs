@@ -6,10 +6,8 @@
 double a = PrintAndGetValue_double("Задача 25. Введите любое число А: ");
 int b = PrintAndGetValue("Введите положительное число B: ");
 
-bool isValid = isPositiveNumber(b);
-if(isValid)
+if(isPositiveNumber(b))
 {
-    //double s = CalculateStepen(a,b);
     Console.WriteLine("А в степени В = "+CalculateStepen(a,b));
 }
 else
