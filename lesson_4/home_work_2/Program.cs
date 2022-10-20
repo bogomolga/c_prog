@@ -5,10 +5,8 @@
 
 int a = PrintAndGetValue("Задача 27. Введите положительное число: ");
 
-bool isValid = isPositiveNumber(a);
-if(isValid)
+if(isPositiveNumber(a))
 {
-    //double s = CalculateStepen(a,b);
     Console.WriteLine("Cуммa цифр в числе = "+CalculateDigitsSum(a));
 }
 else
