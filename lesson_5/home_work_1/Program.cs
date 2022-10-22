@@ -31,7 +31,9 @@ if(isPositiveNumber(n))
 {
     PrintArray(inputArray2);
     Console.WriteLine("");
-    Console.WriteLine("Сумма элементов, стоящих на нечётных позициях: "+GetSumByPosition(false,inputArray2));
+    Console.WriteLine("Сумма элементов, стоящих на нечётных позициях: "+GetSumByPosition(false,inputArray2)); //Передача параметров, четное/нечетное через true/false 
+    //в данной задаче уместна, но лучше таким не увлекаться. Когда вы познакомитесь с enum - будет намного проще и практичнее с передачей разным дополнительных 
+    //параметров в методы.
 }
 else
 {
