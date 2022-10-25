@@ -60,7 +60,7 @@ void FillArray(int[,] matr)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)  //matrix.GetLength(0) - 0 означает кол-во строк!
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++) //matrix.GetLength(1) - 1 означает кол-во столбцов!
         {
             matr[i, j] = new Random().Next(1,10); // [1,10)
         }
