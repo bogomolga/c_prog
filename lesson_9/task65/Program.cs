@@ -9,7 +9,7 @@ if (IsInputValidate(M, N))
 {
     Console.WriteLine($"{"Все натуральные числа в промежутке от " + M + " до " + N + ": " + NumbersRec(M, N)}");
 }
-else Console.WriteLine("Неправильные данные");
+else Console.WriteLine("М должно быть больше N");
 
 
 //--------------------------
@@ -31,7 +31,7 @@ bool IsInputValidate(int a, int b)
     return true;
 }
 
-string NumbersRec (int a, int b)
+string NumbersRec (int a, int b) //рекурсия
 {
     if (a<=b) 
     {
