@@ -26,5 +26,5 @@ int ShowMulti(int number, int mul) //рекурсия заменяет цикл!
     {
         return 1;
     }
-    return ShowMulti(number, mul-1)*number;
+    return ShowMulti(number, mul-1)*number; //число умножается на само себя, а степень каждый раз уменьшается на 1
 }
