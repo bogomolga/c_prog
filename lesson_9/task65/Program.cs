@@ -2,8 +2,8 @@
 //M = 1; N = 5 -> "1, 2, 3, 4, 5"
 //M = 4; N = 8 -> "4, 5, 6, 7, 8"
 
-int M = PrintAndGetValue("Задача 65. Введите положительное значение M: ");
-int N = PrintAndGetValue("Введите положительное значение N: ");
+int M = GetPositivInt("Задача 65. Введите положительное значение M: ");
+int N = GetPositivInt("Введите положительное значение N: ");
 
 if (IsInputValidate(M, N))
 {
@@ -13,10 +13,14 @@ else Console.WriteLine("Неправильные данные");
 
 
 //--------------------------
-int PrintAndGetValue(string message) //функция для ввода и считывания значения из консоли
+int GetPositivInt(string message) //просит ввести число в цикле пока пол-ль его не введет
 {
     Console.WriteLine(message);
-    int value = int.Parse(Console.ReadLine());
+    int value;
+    while (!int.TryParse(Console.ReadLine(), out value) ^ value <0)
+    {
+        Console.Write("Error\n" + message);
+    }
     return value;
 }
 

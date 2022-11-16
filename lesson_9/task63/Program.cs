@@ -10,7 +10,7 @@
 
 
 //с рекурсией (из в ДЗ)
-int n1 = PrintAndGetValue("Задача 64. Введите значение N: ");
+int n1=GetPositivInt("Задача 64. Введите значение N: ");
 
 if (n1 > 1)
 {
@@ -29,10 +29,14 @@ Console.WriteLine();
 
 //----------------------
 
-int PrintAndGetValue(string message) //функция для ввода и считывания значения из консоли
+int GetPositivInt(string message) //просит ввести число в цикле пока пол-ль его не введет
 {
     Console.WriteLine(message);
-    int value = int.Parse(Console.ReadLine());
+    int value;
+    while (!int.TryParse(Console.ReadLine(), out value) ^ value <0)
+    {
+        Console.Write("Error\n" + message);
+    }
     return value;
 }
 
