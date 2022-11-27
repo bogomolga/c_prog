@@ -70,3 +70,23 @@ for (int i = 0; i < n; i++)
     count++;
     Console.WriteLine("i= " + i);
 }   Console.WriteLine("Цикл выполнился " + count + " раз");
+
+
+
+/* Удалить все вхождения элемента из массива:
+1. Enumerable.Where() метод (System.Linq)
+The System.Linq.Enumerable.Where() Метод фильтрует последовательность значений на основе предиката. 
+В следующем примере кода показано, как мы можем использовать Where() чтобы удалить все вхождения элемента из массива. */
+
+//using System;
+//using System.Linq;
+ 
+        int[] array2 = { 1, 3, 4, 5, 4, 2 };
+        int item = 4;
+ 
+        array2 = array2.Where(e => e != item).ToArray(); // удалить заданный элемент из массива
+        Console.WriteLine(String.Join(",", array2));
+
+/*
+    результат: 1,3,5,2
+*/
